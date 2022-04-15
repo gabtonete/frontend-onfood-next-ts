@@ -6,8 +6,8 @@ export function PageTemplate({ ...props }: PageProps) {
   return (
     <>
       <Header />
-      <main>
-        <div className="max-w-7xl mx-auto">
+      <main className="max-w-7xl mx-auto">
+        <div className="w-full mx-auto">
           {props.children}
         </div>
       </main>

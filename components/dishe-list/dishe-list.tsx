@@ -9,6 +9,7 @@ export function DisheList() {
       <Dishe />
       <Dishe />
       <Dishe />
+      <Dishe />
     </div>
   );
 }

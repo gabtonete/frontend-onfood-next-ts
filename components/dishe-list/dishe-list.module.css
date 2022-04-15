@@ -1,5 +1,5 @@
-
 .list {
+    @apply w-full;
     @apply grid grid-cols-1 w-full gap-16;
     @apply md:grid-cols-2 lg:grid-cols-3;
   }

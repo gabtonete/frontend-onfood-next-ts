@@ -6,7 +6,7 @@ import { IconBookmark, IconHome } from '@/icons';
 
 export function Header() {
     return (
-        <header>
+        <header className="w-full mx-auto">
             <nav className={Styles.nav}>
                 <div className={Styles.brand}>
                     <Link href="/">

@@ -5,13 +5,20 @@ import Styles from "../../styles/discovery.module.css";
 
 export default function Descobrir() {
   const router = useRouter();
-  const city = router.query.city;
+  var city = router.query.city;
+  if (city === "sao-paulo-sp") {
+    city = "São Paulo, SP"
+  } else if (city === "porto-alegre-rs") {
+    city = "Porto Alegre, RS"
+  } else {
+    city = "Florianópolis, SC"
+  }
 
   return (
     <PageTemplate>
       <div className={Styles.content}>
         <h1>Opções na região de {city}</h1>
-        <p>Encontramos x opções</p>
+        <p>Encontramos 6 opções</p>
         <div className={Styles.items}>
           <DisheList />
         </div>
